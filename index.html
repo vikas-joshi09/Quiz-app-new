@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="quiz3.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="start-page" style="display: block;">
+            <div id="logo">
+             <img src="https://testbook.com/assets/img/brand/logo-small.png" alt="testbook-logo">
+            </div>
+               <h1>TestBook</h1>
+               <h3>Welcome to the Quiz</h3>
+               <input type="text" name="name" id="user-name"
+                placeholder="enter your name"><br>
+                <select id="profession">
+                    <option value="selectprofession">Select Your Profession</option>
+                    <option value="student">Student</option>
+                    <option value="Employee">Employee</option>
+                    <option value="None">None of these</option>
+                </select><br>
+
+                <button id="start-btn" class="btn-hvr">Start Quiz</button>
+            
+        </div>
+
+
+        <div id="quiz-page" style="display: none;">
+
+            <div id="quiz-question"></div>
+            <div id="quiz-options">
+                
+            </div>
+             <div class="btns">
+                <button id="next-btn" class="btn-hvr">Next</button>
+             </div>
+           
+            
+           </div>
+
+
+           <div id="result-page" style="display: none;"> 
+
+            <h1>Quiz Result</h1>
+            <h3 class="cmplt"></h3>
+            <p id="playername"></p>
+            <p id="playerProfession"></p>
+            <p id="final-result"></p>
+            <button id="restart" class="btn-hvr">Restart</button>
+        </div>
+        
+    </div>
+        
+        
+            
+    
+
+<script src="quiz3.js"></script>
+</body>
+</html>
